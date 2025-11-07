@@ -215,6 +215,28 @@ EXP9
 
 Lambda function create, execution role under aws policy template
 add event, test event, go to logs in cloudwatch
+
+
+10 To create Lambda function using Python to display “Hello_StudentName&quot;.  
+
+python
+
+def lambda_handler(event, context):
+    student_name = "Sumeet Prajapati"  # replace with your name
+    return {
+        'statusCode': 200,
+        'body': f"Hello_{student_name}"
+    }
+
+node
+export const handler = async (event, context) => {
+    const studentName = "Sumeet Prajapati";
+    return {
+        statusCode: 200,
+        body: `Hello_${studentName}`
+    };
+};
+
 -------------------------------------------------------------------------------------------------------------
 EXP10
 
@@ -243,6 +265,7 @@ def lambda_handler(event, context):
 
 invoke function, check json in bucket
 ---------------------------------------------------------------------------------------------------------------
+
 
 
 
