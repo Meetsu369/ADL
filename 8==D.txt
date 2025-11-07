@@ -88,7 +88,7 @@ secret_key = < >
 region = "ap-south-1"
 }
 resource "aws_instance" "terraformUser" {
-ami = <region specific ami"
+ami = " region specific ami"
 instance_type = "t3.micro"
 count = 3
 tags = { Name = "Smeet" }
@@ -265,6 +265,7 @@ def lambda_handler(event, context):
 
 invoke function, check json in bucket
 ---------------------------------------------------------------------------------------------------------------
+
 
 
 
